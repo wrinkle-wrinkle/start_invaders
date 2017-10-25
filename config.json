@@ -1,0 +1,37 @@
+{
+	"darksky": {
+		"key": "",
+		"loc": "",
+		"name": ""
+	},
+	"reddit": {
+		"sub1": {
+			"nam": "Funny",
+			"url": "funny"
+		},
+		"sub2": {
+			"nam": "Ask Reddit",
+			"url": "AskReddit"
+		},
+		"sub3": {
+			"nam": "TIL",
+			"url": "todayilearned"
+		}
+	},
+	"links": {
+        "link1": {"url": "https://www.youtube.com/", "img": "imgs/youtube.png"},
+        "link2": {"url": "https://www.amazon.com/", "img": "imgs/amazon.png"},
+        "link3": {"url": "https://www.reddit.com/r/all/", "img": "imgs/reddit.png"},
+        "link4": {"url": "https://news.google.com/", "img": "imgs/gnews.png"},
+        "link5": {"url": "https://www.washingtonpost.com/", "img": "imgs/wpost.png"},
+        "link6": {"url": "https://mail.google.com/mail/u/0/#inbox", "img": "imgs/gmail.png"},
+        "link7": {"url": "https://outlook.live.com/owa/", "img": "imgs/outlook.png"},
+        "link8": {"url": "https://mail.yahoo.com/", "img": "imgs/yahoo.png"},
+        "link9": {"url": "https://bitbucket.org/dashboard/overview", "img": "imgs/bitbucket.png"},
+        "link10": {"url": "https://github.com/wrinkle-wrinkle", "img": "imgs/github.png"},
+        "link11": {"url": "https://stackoverflow.com/", "img": "imgs/stack.png"},
+        "link12": {"url": "https://drive.google.com/drive/#", "img": "imgs/gdrive.png"},
+        "link13": {"url": "https://www.dropbox.com/home", "img": "imgs/dropbox.png"},
+        "link14": {"url": "https://onedrive.live.com/", "img": "imgs/onedrive.png"}
+    }
+}

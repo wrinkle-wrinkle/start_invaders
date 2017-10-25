@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Start Invaders</title>
+    <link rel="icon" type="image/png" href="icons/sp16.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="candiv" class="center-div hider"></div>
+    <div id="webdiv" class="center-div">
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <br>
+            <br>
+            <br>
+            <div class="row" id="row-main">
+                <div id="sidePanel" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
+                    <div class="card">
+                        <a id="wLink" href="#">
+                            <div class="card-image">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div style="padding: 10px;">
+                                            <div id="city"></div>
+                                            <div id="curTemp" style="font-size: 55px;">--</div>
+                                            <div id="hiLo" style="font-size: 20px;">
+                                                <span id="hi">H: --&deg;</span>
+                                                <span id="lo">L: --&deg;</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <canvas style="padding-right: -10px; padding-top:10px;" id="icon1" width="125" height="125"></canvas>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="padding: 10px">
+                                            <p id="wSum"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card-content" style="background: white">
+                            <div>
+                                <div class="giveMeEllipsis">
+                                    <b><a href="#" id="sub1_nam">Sub1: </a></b>
+                                    <a href="#" id="sub1_hot"></a>
+                                </div>
+                                <sup><a id="sub1_com" href="#"></a></sup>
+                            </div>
+                            <div>
+                                <div class="giveMeEllipsis">
+                                    <b><a href="#" id="sub2_nam">Sub2: </a></b>
+                                    <a href="#" id="sub2_hot"></a>
+                                    <br>
+                                </div>
+                                <sup><a id="sub2_com" href="#"></a></sup>
+                            </div>
+                            <div>
+                                <div class="giveMeEllipsis">
+                                    <b><a href="#" id="sub3_nam">Sub3: </a></b>
+                                    <a href="#" id="sub3_hot"></a>
+                                    <br>
+                                </div>
+                                <sup><a id="sub3_com" href="#"></a></sup>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="iconPanel" class="col-lg-9 col-md-8 col-sm-12">
+                    <div id="row1" class="row">
+                        <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+                            <a id="link1_url" href="https://www.google.com/">
+                                <img id="link1_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link1">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link2_url" href="https://www.google.com/">
+                                <img id="link2_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link2">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link3_url" href="https://www.google.com/">
+                                <img id="link3_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link3">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link4_url" href="https://www.google.com/">
+                                <img id="link4_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link4">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link5_url" href="https://www.google.com/">
+                                <img id="link5_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link5">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--SECOND ROW-->
+                    <div id="row2" class="row">
+                        <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1">
+                            <a id="link6_url" href="https://www.google.com/">
+                                <img id="link6_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link6">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link7_url" href="https://www.google.com/">
+                                <img id="link7_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link7">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link8_url" href="https://www.google.com/">
+                                <img id="link8_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link8">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link9_url" href="https://www.google.com/">
+                                <img id="link9_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link9">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link10_url" href="https://www.google.com/">
+                                <img id="link10_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link10">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="baseSpace" class="hider">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <!--Bases-->
+                    <div id="bases" class="row">
+                        <div class="col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2 col-xs-2 col-xs-offset-2">
+                            <a id="link11_url" href="https://www.google.com/">
+                                <img id="link11_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link11">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link12_url" href="https://www.google.com/">
+                                <img id="link12_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link12">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link13_url" href="https://www.google.com/">
+                                <img id="link13_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link13">
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <a id="link14_url" href="https://www.google.com/">
+                                <img id="link14_img" class="img-responsive hvr-shrink" src="imgs/default.png" alt="link14">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <!--FIRST ROW-->
+            <!-- /.container -->
+        </div>
+    </div>
+
+    <div class="myEdit">
+        <span id="edit_dir" style="color:white;" class="hider">Click On Any Component to Customize</span>
+        <button id="myEdit" class="button inactive_butt">Customize</button>
+    </div>
+
+    <div class="myButt">
+        <button id="myButt" class="button inactive_butt">New Game</button>
+    </div>
+
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a class="closebtn">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <div class="container-fluid">
+                <div id="link_row" class="row hider">
+                    <div class="col-md-2">
+                        <img id="img_edit" class="img-responsive imgSize" src="imgs/default.png" alt="">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label id="label_edit" for="url_edit"></label>
+                            <input type="url" class="form-control" id="url_edit" placeholder="https://www.google.com/">
+                        </div>
+                        <div class="form-group">
+                            <label for="file_edit">Icon File</label>
+                            <input type="file" id="file_edit" accept="image/*">
+                        </div>
+                        <button id="sub_edit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+                <div id="reddit_row" class="row hider">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label id="label_reddit" for="url_reddit"></label>
+                        </div>
+                        <div class="form-group form-inline">
+                            <input type="text" class="form-control" id="nam_reddit" placeholder="All" style="width:20%">
+                            <input type="url" class="form-control" id="url_reddit" placeholder="https://www.reddit.com/r/all/" style="width:70%">
+                        </div>
+                        <div>
+                            <button id="sub_reddit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="weather_row" class="row hider">
+                    <div class="col-md-12">
+                        <div class="form-group form-inline">
+                            <input type="text" class="form-control" id="w_cit" placeholder="Name" style="width:30%">
+                            <input type="text" class="form-control" id="w_lat" placeholder="Latitude" style="width:20%">
+                            <input type="text" class="form-control" id="w_long" placeholder="Longitude" style="width:20%">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="w_key" placeholder="Dark Sky api key" style="width:90%">
+                        </div>
+                        <div>
+                            <button id="sub_w" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="libraries/jquery.js" type="text/javascript"></script>
+        <script src="libraries/bootstrap.min.js" type="text/javascript"></script>
+        <script src="libraries/p5.min.js" type="text/javascript"></script>
+        <script src="libraries/skycons.js" type="text/javascript"></script>
+        <script src="js/sketch.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
+
+</body>
+
+</html>

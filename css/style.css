@@ -1,0 +1,300 @@
+body, html {
+  overflow-y: hidden;
+}
+
+body {
+  background: #212121;
+}
+
+
+[id*=_nam]:link, [id*=_nam]:hover, [id*=_nam]:active, [id*=_nam]:visited {
+  text-decoration: none;
+  color: #212121;
+}
+
+[id*=_hot]:link, [id*=_hot]:hover, [id*=_hot]:active {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+[id*=_hot]:visited {
+  text-decoration: none;
+  color: #551a8b;
+}
+
+[id*=_com]:link, [id*=_com]:hover, [id*=_com]:active, [id*=_com]:visited {
+  color: #888;
+}
+
+#wLink {
+  color: #212121;
+}
+
+#iconPanel img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#row-main {
+  overflow-x: hidden;
+}
+
+.myWease {
+  transition: width 0.5s ease;
+}
+
+.myMease {
+  transition: margin 0.5s ease;
+}
+
+.collapsed {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .collapsed {
+    display: block;
+    /* same width as sidebar */
+    margin-left: -34%;
+  }
+
+  .myButt {
+    display:block;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #212121;
+  }
+}
+
+@media (max-width: 991px) {
+  .myButt {
+    display:none;
+  }
+}
+
+
+
+
+.myEdit {
+  display:block;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+
+.inactive_butt {
+  background-color: #212121;
+  opacity: 0.1;
+}
+
+.active_butt {
+  background-color: #F44336;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.inactive_butt:hover {
+  background-color: #424242;
+  opacity: 0.75;
+}
+
+.hider {
+  display: none;
+}
+
+#webdiv {
+  z-index: -1000;
+}
+
+.center-div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  height: 98%;
+}
+
+/* Images */
+.myicon {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    background-color: #212121;
+}
+
+.hidicon {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    background-color: #212121;
+    display: none;
+}
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  /*margin-top: 10px;*/
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /*max-width: 275px;*/
+}
+
+.card span.card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card .card-image {
+  position: relative;
+  overflow: hidden;
+  background: #F44336;
+}
+.card .card-image img {
+  border-radius: 2px 2px 0 0;
+  background-clip: padding-box;
+  position: relative;
+  /*z-index: -1;*/
+}
+.card .card-image span.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+}
+.card .card-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+}
+.card .card-content span.card-title {
+  line-height: 48px;
+}
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.1.0
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 80%; /* 100% width */
+    /*text-align: center;*/ /* Centered text/links */
+    /*margin-top: 30px;*/ /* 30px top margin to avoid conflict with the close button on smaller screens */
+    margin: 30px auto 0px auto;  /*Center content on page*/
+    float: none;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.testDiv {
+    height: 3em;
+    line-height: 3em;
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+}
+
+.giveMeEllipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   line-height: X;        /* fallback */
+   max-height: X*3;       /* fallback */
+}
