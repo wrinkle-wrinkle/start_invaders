@@ -11,7 +11,7 @@ Chrome extension that replaces the startpage.  Provides weather, three subreddit
 
 ## Customizing the Start Page
 
-The extensions comes with a default template including some links and the most popular subreddits.  To customize the page, just click on the **Customize** button in the top right corner.  Once you click that all of the elements on the page are available for editing.  Just click on any element and an overlay will slide in and you can update the details.  When you first load the extension, the weather won't display anything, because you first need to get a free API key from [Dark Sky](https://darksky.net/dev).  Once you do that, in Edit Mode, click on the weather, and enter your API key and you Lat/Lon, as well as a location name.
+The extensions comes with a default template including some links and the most popular subreddits.  To customize the page, just click on the **Customize** button in the top right corner.  Once you click that all of the elements on the page are available for editing.  Just click on any element and an overlay will slide in and you can update the details.  For the icons, you can use any image you want, just browse to the file and choose it.  When you first load the extension, the weather won't display anything, because you first need to get a free API key from [Dark Sky](https://darksky.net/dev).  Once you do that, in Edit Mode, click on the weather, and enter your API key and you Lat/Lon, as well as a location name.
 
 ## Playing the Game
 
