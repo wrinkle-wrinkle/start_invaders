@@ -28,6 +28,7 @@ When you click the **New Game** button on the bottom right, the page will transf
 * [Bootstrap](https://getbootstrap.com/docs/3.3/) - Web framework
 * [jQuery](https://jquery.com/) - Javascript
 * [p5.js](https://p5js.org/) - Game mechanics
+* [Hover.css](http://ianlunn.github.io/Hover/) - Hover effect
 * [Dark Sky API](https://darksky.net/dev) - Weather API
 
 ## Acknowledgments
